@@ -1,0 +1,92 @@
+/*No olvidarse de importar las variables*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(to top, #dad6d6, black); }
+
+header {
+  grid-area: head;
+  background-color: rgba(215, 202, 157, 0.9); }
+  header div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-left: 5px;
+    grid-template-columns: 0.5fr 3.5fr 3.5fr 0.5fr;
+    gap: 5px;
+    border-bottom: 2px solid rgba(18, 14, 2, 0.9);
+    position: sticky; }
+    header div nav div a {
+      width: 90%;
+      height: 100%;
+      border-style: solid; }
+    header div nav div h1 ecbz {
+      margin-left: 10px;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center; }
+    header div nav div div ul {
+      list-style-type: none; }
+    header div nav div div li {
+      display: inline-block;
+      padding: 1rem;
+      font-family: 'Poppins', sans-serif; }
+      header div nav div div li:hover {
+        background-color: brown; }
+
+/* Main pag principal*/
+.main_ppal {
+  grid-area: main_ppal; }
+  .main_ppal main {
+    display: flex;
+    gap: 170px;
+    justify-items: center;
+    background-color: white; }
+    .main_ppal main .link a {
+      margin-left: 20px; }
+    .main_ppal main .imagen-p {
+      width: 200%; }
+
+.section_ppal {
+  grid-area: section_ppal; }
+  .section_ppal .tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+    margin-top: 8rem;
+    gap: 4rem;
+    text-align: center; }
+    .section_ppal .tarjetas .tarjetas__caja {
+      width: 344px;
+      background-color: #efa5a5;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      padding: 2rem 3rem; }
+      .section_ppal .tarjetas .tarjetas__caja .tarjetas__btn {
+        display: inline-block;
+        background-color: rgba(208, 59, 109, 0.893);
+        color: white;
+        text-transform: uppercase;
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        margin: 1.5rem 0rem; }
+        .section_ppal .tarjetas .tarjetas__caja .tarjetas__btn:hover {
+          transform: scale(1.05);
+          background-color: darkgrey; }
+
+/* Footer */
+.foot {
+  grid-area: foot;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center; }
+  .foot h3 {
+    font-size: medium;
+    text-align: center; }
+  .foot h4 {
+    font-size: medium;
+    text-align: center;
+    color: rgba(215, 202, 157, 0.9); }
